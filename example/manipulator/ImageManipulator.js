@@ -399,12 +399,12 @@ class ExpoImageManipulator extends Component {
                                                     >
                                                         <MaterialIcon size={20} name="flip" color="white" />
                                                     </TouchableOpacity>
-                                                    <TouchableOpacity onPress={() => { onPictureChoosed({ uri, base64 }); this.onToggleModal() }}
+                                                    <TouchableOpacity onPress={() => { onPictureChoosed({ uri, base64 }); }}
                                                         style={{
                                                             marginLeft: 10, width: 60, height: 32, alignItems: 'center', justifyContent: 'center',
                                                         }}
                                                     >
-                                                        <Text style={{ fontWeight: '500', color: 'white', fontSize: 18 }}>{btnTexts.done}</Text>
+                                                        <Text style={{ color: 'white', fontSize: 18 }}>{btnTexts.done}</Text>
                                                     </TouchableOpacity>
                                                 </View>
                                             )
@@ -428,7 +428,7 @@ class ExpoImageManipulator extends Component {
                                     >
                                         <View style={{ flexDirection: 'row' }}>
                                             <MaterialIcon style={{ flexDirection: 'row', marginRight: 10 }} size={24} name={!processing ? 'done' : 'access-time'} color="white" />
-                                            <Text style={{ fontWeight: '500', color: 'white', fontSize: 18 }}>{!processing ? btnTexts.crop : btnTexts.processing}</Text>
+                                            <Text style={{ color: 'white', fontSize: 18 }}>{!processing ? btnTexts.crop : btnTexts.processing}</Text>
                                         </View>
                                     </TouchableOpacity>
                                 </View>
